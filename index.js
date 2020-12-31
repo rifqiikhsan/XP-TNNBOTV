@@ -21,6 +21,7 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 const imgbb = require('imgbb-uploader')
 const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
 const nsfw = JSON.parse(fs.readFileSync('./src/nsfw.json'))
+const adminNumber = JSON.parse(fs.readFileSync('./src/admin.json'))
 const anime = JSON.parse(fs.readFileSync('./src/anime.json'))
 const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 const vcard = 'BEGIN:VCARD\n' // ANAK ANJING MAU NGAPAIN?
@@ -331,8 +332,11 @@ async function starts() {
                     costum(pesan, isi, pesan2)
                     break
                 case 'fakereplay':
-                   client2.fakeReply("ange mas", "mending lari", "0823-877101916", MessageType.text)
+                   client.reply(from, 'ange mas', 'mending lari', "0823-877101916")
                    break
+                case 'but':
+                    client.reply(from, 'asw', Message.Type.text)
+                    break
 				case 'infogc':
 				client.updatePresence(from, Presence.composing)
 				if (!isGroup) return reply(mess.only.group)
