@@ -25,6 +25,13 @@
 ```bash
 >Command BOT $
 ```
+```bash
+>Restart Script Waiting For Update 
+>Sorry For Use My sc Its error
+>iam To Fixed Error Connecting
+>Thanks For User My Script😙
+```
+
 
 ## Install the dependencies:
 Before running the below command, make sure you're in the project directory that
